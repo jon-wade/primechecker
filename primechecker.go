@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func calculatePrimacy(v int) bool {
+func CalculatePrimacy(v int) bool {
 	isPrime := true
 	for i := 2; i < v; i++ {
 		if v%i == 0 {
@@ -35,7 +35,7 @@ func main() {
 			fmt.Println("Please enter an integer value!")
 			loop--
 		} else {
-			fmt.Printf("Result: %v \n", calculatePrimacy(result))
+			fmt.Printf("Result: %v \n", CalculatePrimacy(result))
 		}
 	}
 }
